@@ -36,7 +36,7 @@ self.addEventListener('install',e=>{
 
   e.waitUntil(Promise.all([cacheStatic,cacheInmutable]));
 });
-elf.addEventListener('activate', e => {
+self.addEventListener('activate', e => {
 
     const respuesta = caches.keys().then( keys => {
 
